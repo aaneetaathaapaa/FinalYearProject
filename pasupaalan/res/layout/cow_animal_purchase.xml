@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtPurchasedTagId1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtSellerFarmerId1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Purchased Animal (Tag Id)"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtSellerFarmerId1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etTagId"
+        android:layout_marginTop="30dp"
+        android:text="Seller Farmer Id"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtBuyingPrice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edtSellerFarmerId1"
+        android:layout_marginTop="32dp"
+        android:text="Buying Price"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtPurchasedDate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edtBuyingPrice1"
+        android:layout_marginTop="44dp"
+        android:text="Purchased Date"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/edtSellerFarmerId1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtSellerFarmerId1"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edtBuyingPrice1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtBuyingPrice1"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/etTagId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edtPurchasedDate1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtPurchasedDate1"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/btnAdd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPurchasedDate1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/rounded_button"
+        android:text="Add Record"
+        android:textColor="#F26522" />
+   
+</RelativeLayout>

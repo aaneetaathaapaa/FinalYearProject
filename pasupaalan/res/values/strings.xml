@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MultipleChoiceActivity!</string>
+
+    
+
+    <string name="app_name">AHIS</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+      
+   <string name="action_settings">Settings</string>
+    
+    <string-array name="menus">
+        <item >General</item>
+        <item>Search</item>
+        <item >Medical</item>
+        <item >SalesPurchase</item>
+        <item>Settings</item>
+        
+        
+    </string-array>
+    <string-array name="menus1">
+        <item >VaccinationRecord</item>
+        <item>Disease</item>
+        
+    </string-array>
+     <string-array name="menus2">
+        <item >Sale</item>
+        <item>Purchase</item>
+        
+    </string-array>
+    
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
+    <string name="date">Date of Treatment</string>
+    <string name="cat">Category</string>
+    <string name="symptom">Select the Symptoms</string>
+    <string name="temp">Temperature</string>
+    <string name="tag">Tag ID</string>
+    <string name="herd">Herd ID</string>
+    <string name="weight">Weight</string>
+    <string name="age">Age</string>
+    <string name="calf">Calf</string>
+    <string name="Birthinfo">Birth Information</string>
+    <string name="farmer">Farmer ID</string>
+    <string name="raised">Raised</string>
+    <string name="purchased">Purchased</string>
+    <string name="search">Enter a Tag ID </string>
+    <string name="add">Add record</string>
+    <string name="milk">Milk Produced(per day)</string>
+    <string name="home">Home Use</string>
+    <string name="Sold">Sold Amount</string>
+    <string name="sales">Daily Sales</string>
+    
+  
+
+</resources>

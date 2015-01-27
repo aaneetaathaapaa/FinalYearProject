@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtSoldTagId1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Sold Animal (Tag Id)"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtBuyerFarmerId1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edtSoldTagId1"
+        android:layout_marginTop="30dp"
+        android:text="Buyer Farmer Id"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtSellingPrice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edtBuyerFarmerId1"
+        android:layout_marginTop="32dp"
+        android:text="Selling Price"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btnAdd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSoldDate1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="#F26522"
+        android:text="Add Record" />
+
+    <EditText
+        android:id="@+id/edtSoldTagId1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtSoldTagId1"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtBuyerFarmerId1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtBuyerFarmerId1"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edtSoldDate1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtSoldDate1"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edtSellingPrice1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtSellingPrice1"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/txtSoldDate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edtSellingPrice1"
+        android:layout_marginTop="34dp"
+        android:text="Sold Date"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+   
+</RelativeLayout>

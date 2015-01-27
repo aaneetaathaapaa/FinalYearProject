@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+          android:id="@+id/txtTagId"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:text="@string/tag"
+          android:textSize="20dp" />
+    
+    <EditText
+        android:id="@+id/edtTagId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtTagId"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+        
+       
+    </EditText>
+    
+    <TextView
+          android:id="@+id/txtMilkProduced"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/edtTagId"
+          android:layout_marginTop="18dp"
+          android:text="Milk Produced"
+          android:textSize="20dp" />
+    
+    <EditText
+          android:id="@+id/edtMilkProduced"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/txtMilkProduced"
+          android:background="@drawable/rounded_edit_text"
+          android:ems="10" />
+    
+    <TextView
+          android:id="@+id/txtHomeUse"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/edtMilkProduced"
+          android:layout_alignParentLeft="true"
+          android:text="Home Use"
+          android:layout_marginTop="18dp"
+          android:textSize="20dp" />
+    
+    <EditText
+          android:id="@+id/edtHomeUse"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/txtHomeUse"
+          android:layout_alignParentLeft="true"          
+          android:background="@drawable/rounded_edit_text"
+          android:ems="10"
+          android:hint="in litre" />
+
+    
+
+    <TextView
+        android:id="@+id/txtSoldAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edtHomeUse"
+        android:layout_marginTop="33dp"
+        android:text="Sold Amount"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtSoldAmount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+                  android:layout_marginBottom="28dp"          
+                  android:background="@drawable/rounded_edit_text"
+                  android:hint="in litre"
+        
+        android:layout_below="@+id/txtSoldAmount"
+        android:ems="10" />
+    
+    <TextView
+        android:id="@+id/txtdailysales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edtSoldAmount"
+          android:text="Daily Sales"
+          android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtdailysales"
+       	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtdailysales"
+        android:ems="10" 
+        android:background="@drawable/rounded_edit_text"
+        android:hint = "Rs.1000"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"
+        android:text="Add" />
+
+    </RelativeLayout>

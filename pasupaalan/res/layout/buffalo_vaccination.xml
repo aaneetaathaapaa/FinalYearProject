@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+ >
+
+    <TextView
+        android:id="@+id/txtTagId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/tag" 
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/edtTagId1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtTagId"
+        android:ems="10"
+        android:background="@drawable/rounded_edit_text"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edtTagId1"
+        android:layout_marginTop="37dp"
+        android:text="Vaccination date" 
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/edtDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtDate"
+        android:ems="10"      
+        android:inputType="date"   
+        android:background="@drawable/rounded_edit_text"
+        />
+
+    <TextView
+        android:id="@+id/txtAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edtDate"
+        android:layout_marginTop="42dp"
+        android:text="Vaccination Amount" 
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edtAmount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtAmount"
+        android:ems="10"
+        android:background="@drawable/rounded_edit_text" />
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edtAmount"
+        android:layout_marginTop="36dp"
+        android:text="Vaccination Name"
+                android:textSize="20dp"
+        
+        
+         />
+
+    <EditText
+        android:id="@+id/edtVaccination"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtname"
+        android:ems="10" 
+        android:background="@drawable/rounded_edit_text"
+        />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"
+        android:text="Add" />
+
+</RelativeLayout>

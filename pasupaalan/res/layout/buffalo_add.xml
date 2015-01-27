@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+
+    <TextView
+        android:id="@+id/txtTagId1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etTagId1"
+        android:layout_alignParentLeft="true"
+        android:text="@string/tag"  
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtHerdId1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtTagId1"
+        android:layout_marginTop="21dp"
+        android:text="@string/herd"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        />
+
+    <TextView
+        android:id="@+id/txtFarmerId1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHerdId1"
+        android:layout_marginTop="20dp"
+        android:text="@string/farmer"
+        
+        
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtWeight1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtFarmerId1"
+        android:layout_marginTop="20dp"
+        
+        android:text="@string/weight"
+        
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+        android:id="@+id/txtDate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="date"
+   
+        android:visibility="gone" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etAge1"
+            android:layout_below="@+id/etAge1"
+            android:layout_marginLeft="14dp"
+            android:orientation="vertical" 
+            android:id="@+id/radioGroup2">
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSubmit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etAge1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:gravity="center_vertical"
+   			android:background="@drawable/rounded_button"
+   			android:textColor="#F26522"
+            android:text="Submit"
+            />
+
+        <TextView
+            android:id="@+id/txtBirthInfo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroup2"
+            android:layout_marginTop="26dp"
+            android:layout_toLeftOf="@+id/radioGroup2"
+            android:text="@string/Birthinfo"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+             />
+
+        <EditText
+            android:id="@+id/etFarmerId1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtFarmerId1"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/rounded_edit_text"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/etWeight1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtWeight1"
+            android:layout_alignBottom="@+id/txtWeight1"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_edit_text"
+            android:ems="10"
+            android:inputType="number" />
+
+        <RadioButton
+            android:id="@+id/rbRaised1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtBirthInfo1"
+            android:layout_toRightOf="@+id/radioGroup2"
+            android:text="@string/raised" />
+
+        <EditText
+            android:id="@+id/etAge1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/etWeight1"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rounded_edit_text"
+            android:ems="10"
+            android:inputType="number" />
+
+        <RadioButton
+            android:id="@+id/rbPurchased1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtBirthInfo1"
+            android:layout_alignBottom="@+id/txtBirthInfo1"
+            android:layout_toRightOf="@+id/radioGroup2"
+            android:text="@string/purchased" />
+
+        <EditText
+            android:id="@+id/etTagId1"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etFarmerId1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_edit_text"
+            android:ems="10"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/etHerdId1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtHerdId1"
+            android:layout_toRightOf="@+id/txtBirthInfo1"
+            android:background="@drawable/rounded_edit_text"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/txtAge1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/etAge1"
+            android:text="@string/age"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

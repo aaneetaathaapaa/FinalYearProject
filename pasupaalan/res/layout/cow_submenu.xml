@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <Button
+        android:id="@+id/btnSales"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnGeneral"
+        android:layout_below="@+id/btnMedical"
+        android:layout_marginTop="65dp"
+        android:textColor="#F26522"
+        android:background="@drawable/rounded_button"
+        android:text="Sales" />
+
+    <Button
+        android:id="@+id/btnGeneral"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="#F26522"
+        android:text="General" />
+
+    <Button
+        android:id="@+id/btnMedical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnGeneral"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="#F26522"
+        android:text="Medical" />
+
+</RelativeLayout>

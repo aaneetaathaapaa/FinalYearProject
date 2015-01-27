@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtmilk1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/edtMilk1"
+        android:text="@string/milk"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/edtMilk1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:hint="in litre"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtSoldAmount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtSoldAmount1"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+                android:hint="in litre"
+        
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edtDailySale1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtDailySale1"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"              
+        android:hint="Rs.1000"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txtDailySale1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtHomeUse1"
+        android:layout_below="@+id/txtSoldAmount1"
+        android:layout_marginTop="47dp"
+        android:text="@string/sales" />
+
+    <EditText
+        android:id="@+id/edtHomeUse1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtHomeUse1"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:hint="in litre"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txtHomeUse1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtmilk1"
+        android:layout_marginTop="22dp"
+        android:text="@string/home"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txtSoldAmount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtHomeUse1"
+        android:layout_marginTop="54dp"
+        android:text="@string/Sold" />
+
+    <Button
+        android:id="@+id/btnAdd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtDailySale1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/add"
+        android:textColor="#F26522" />
+
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+
+    <TextView
+        android:id="@+id/txtTagId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etTagId"
+        android:layout_alignParentLeft="true"
+        android:text="@string/tag"  
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtHerdId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtTagId"
+        android:layout_marginTop="21dp"
+        android:text="@string/herd"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        />
+
+    <TextView
+        android:id="@+id/txtFarmerId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHerdId"
+        android:layout_marginTop="20dp"
+        android:text="@string/farmer"
+        
+        
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/txtWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtFarmerId"
+        android:layout_marginTop="20dp"
+        
+        android:text="@string/weight"
+        
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="date"
+   
+        android:visibility="gone" />
+
+       
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etAge"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:gravity="center_vertical"
+   			android:background="@drawable/rounded_button"
+   			android:textColor="#F26522"
+            android:text="Submit"
+            />
+
+        <EditText
+            android:id="@+id/etFarmerId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtFarmerId"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/rounded_edit_text"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/etWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtWeight"
+            android:layout_alignBottom="@+id/txtWeight"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_edit_text"
+            android:ems="10"
+            android:inputType="number" />
+
+    
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/etWeight"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/rounded_edit_text"
+            android:ems="10"
+            android:inputType="number" />
+
+        
+
+        <EditText
+            android:id="@+id/etTagId"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etFarmerId"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_edit_text"
+            android:ems="10"
+            android:inputType="number" >
+
+            <requestFocus android:layout_width="wrap_content" />
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/etHerdId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtHerdId"
+            android:layout_alignLeft="@+id/etFarmerId"
+            android:background="@drawable/rounded_edit_text"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/txtAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/etAge"
+            android:text="@string/age"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/txtBirthInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etAge"
+            android:layout_marginTop="20dp"
+            android:text="BirthInfo"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+<RadioGroup
+    android:id="@+id/raiogroup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/btnSubmit"
+    android:layout_alignTop="@+id/txtBirthInfo" >
+
+    <RadioButton
+        android:id="@+id/rbRaised"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etAge"
+        android:layout_alignTop="@+id/txtBirthInfo"
+        android:text="Raised" />
+
+    <RadioButton
+        android:id="@+id/rbPurchased"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioButton2"
+        android:layout_below="@+id/radioButton2"
+        android:text="Purchased" />
+</RadioGroup>
+         
+        </RelativeLayout>
